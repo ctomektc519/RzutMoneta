@@ -1,0 +1,7 @@
+C:\cszarp\RzutMoneta\RzutMoneta\bin\Debug\RzutMoneta.exe.config
+C:\cszarp\RzutMoneta\RzutMoneta\bin\Debug\RzutMoneta.exe
+C:\cszarp\RzutMoneta\RzutMoneta\bin\Debug\RzutMoneta.pdb
+C:\cszarp\RzutMoneta\RzutMoneta\obj\Debug\RzutMoneta.csprojAssemblyReference.cache
+C:\cszarp\RzutMoneta\RzutMoneta\obj\Debug\RzutMoneta.csproj.CoreCompileInputs.cache
+C:\cszarp\RzutMoneta\RzutMoneta\obj\Debug\RzutMoneta.exe
+C:\cszarp\RzutMoneta\RzutMoneta\obj\Debug\RzutMoneta.pdb
