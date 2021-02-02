@@ -22,6 +22,7 @@ namespace RzutMoneta
                 {
                     Console.WriteLine("Ile monet? – wpisz liczbę w przedziale od 1 do 5");
                     String line = Console.ReadLine();
+                    if (line == "") line = "1";
 
                     try
                     {
