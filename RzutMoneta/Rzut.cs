@@ -13,8 +13,8 @@ namespace RzutMoneta
         {
         }
         int[] values;
-        int orly = 0;
-        int reszki = 0;
+       public int orly = 0;
+       public  int reszki = 0;
 
         public void Losowanie(int x)
         {
