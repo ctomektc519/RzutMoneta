@@ -5,7 +5,7 @@ using RzutMoneta;
 namespace RzutTest
 {
     [TestClass]
-    public class TestyJednostkoweRM
+    public class TestyRM
     {
         [TestMethod]
         public void PiecMonet()
@@ -14,7 +14,7 @@ namespace RzutTest
             Rzut rz = new Rzut();
             rz.Losowanie(LMonet);
             rz.Wyniki();
-            int Liczbalosow = rz.orly + rz.reszki;
+            int Liczbalosow = rz.orzel + rz.reszka;
             Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
         }
 
@@ -25,7 +25,7 @@ namespace RzutTest
             Rzut rz = new Rzut();
             rz.Losowanie(LMonet);
             rz.Wyniki();
-            int Liczbalosow = rz.orly + rz.reszki;
+            int Liczbalosow = rz.orzel + rz.reszka;
             Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
         }
        /* [TestMethod]

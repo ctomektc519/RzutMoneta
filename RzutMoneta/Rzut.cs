@@ -9,12 +9,31 @@ namespace RzutMoneta
 {
     public class Rzut
     {
+
+        public int orzel
+        {
+            get
+            {
+                return orly;
+            }
+            }   
+            
+        public int reszka
+        {
+            get
+            {
+                return reszki;
+            }
+        }
+
+
+
         public Rzut()
         {
         }
         int[] values;
-       public int orly = 0;
-       public  int reszki = 0;
+        private int orly = 0;
+        private int reszki = 0;
 
         public void Losowanie(int x)
         {
