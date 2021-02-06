@@ -47,7 +47,7 @@ namespace RzutMoneta
             catch (ArgumentException)
             {
                 Console.WriteLine("!! Wprowadzona liczba jest spoza zakresu 1-5 !!");
-                x = 0;
+                x = -1;
             }
             catch (Exception e)
             {

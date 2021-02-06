@@ -18,7 +18,7 @@ namespace RzutTest
             Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
         }
 
-        [TestMethod]
+    /*    [TestMethod]
         public void JednaMoneta()
         {
             int LMonet = 1;
@@ -28,17 +28,17 @@ namespace RzutTest
             int Liczbalosow = rz.orzel + rz.reszka;
             Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
         }
-       /* [TestMethod]
+        [TestMethod]
         public void szescMonet()
         {
-            int LMonet = 0;
+            int LMonet = 6;
             Rzut rz = new Rzut();
             rz.Losowanie(LMonet);
             rz.Wyniki();
             int Liczbalosow = rz.orzel + rz.reszka;
             Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
-        }
-        */
+        }*/
+        
 
 
     }
