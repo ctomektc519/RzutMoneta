@@ -17,6 +17,23 @@ namespace RzutTest
             Assert.AreEqual(rz.wartosci.Length, LMonet, "Rzut nieudany");
         }
 
+       /* [TestMethod]
+        public void TestWyniki()
+        {
+            
+           // int[] values = new int[] { 0, 1, 0 };
+            Rzut rz = new Rzut();
+            
+            //int[] values = new int[] { 0, 1, 0,1 };
+            
+            rz.Wyniki();
+            int a = rz.orzel + rz.reszka;
+            
+            /*rz.Losowanie(LMonet);
+            int Liczbalosow = rz.orzel + rz.reszka;
+            Assert.AreEqual(a,0 , "Rzut nieudany");
+        }*/
+
         [TestMethod]
         public void PiecMonet()
         {
