@@ -7,6 +7,7 @@ namespace RzutTest
     [TestClass]
     public class TestyRM
     {
+
         [TestMethod]
         public void PiecMonet()
         {
@@ -18,7 +19,7 @@ namespace RzutTest
             Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
         }
 
-    /*    [TestMethod]
+       [TestMethod]
         public void JednaMoneta()
         {
             int LMonet = 1;
@@ -28,18 +29,25 @@ namespace RzutTest
             int Liczbalosow = rz.orzel + rz.reszka;
             Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
         }
+
         [TestMethod]
-        public void szescMonet()
+       public void SzescMonet()
         {
             int LMonet = 6;
             Rzut rz = new Rzut();
-            rz.Losowanie(LMonet);
-            rz.Wyniki();
-            int Liczbalosow = rz.orzel + rz.reszka;
-            Assert.AreEqual(Liczbalosow, LMonet, "Rzut nieudany");
-        }*/
-        
+   
+           Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => rz.Losowanie(LMonet));
+        }
 
+        [TestMethod]
+        public void ZeroMonet()
+        {
+            int LMonet = 0;
+            Rzut rz = new Rzut();
 
+            Assert.ThrowsException<System.ArgumentOutOfRangeException>(() => rz.Losowanie(LMonet));
+        }
+
+                     
     }
 }

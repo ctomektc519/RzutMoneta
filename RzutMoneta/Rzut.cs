@@ -25,7 +25,7 @@ namespace RzutMoneta
                 return reszki;
             }
         }
-
+    //  public  string ww;
 
 
         public Rzut()
@@ -37,23 +37,12 @@ namespace RzutMoneta
 
         public void Losowanie(int x)
         {
-            try
-            {
-                if (x <= 0 || x > 5)
-                {
-                    throw new ArgumentException();
-                }
-            }
-            catch (ArgumentException)
-            {
-                Console.WriteLine("!! Wprowadzona liczba jest spoza zakresu 1-5 !!");
-                x = -1;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-
-            }
+         
+             if (x <= 0 || x> 5)
+              {
+              throw new ArgumentOutOfRangeException();
+             }
+            
             try
             {
                 Random losuj = new Random();
