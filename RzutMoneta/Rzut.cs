@@ -25,13 +25,20 @@ namespace RzutMoneta
                 return reszki;
             }
         }
+        public int[] wartosci
+        {
+            get
+            {
+                return values;
+            }
+        }
     //  public  string ww;
 
 
         public Rzut()
         {
         }
-        int[] values;
+        private int[] values;
         private int orly = 0;
         private int reszki = 0;
 

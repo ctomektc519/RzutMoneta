@@ -7,6 +7,15 @@ namespace RzutTest
     [TestClass]
     public class TestyRM
     {
+        [TestMethod]
+        public void TestLosowanie()
+        {
+            int LMonet = 3;
+            Rzut rz = new Rzut();
+            rz.Losowanie(LMonet);
+           int Liczbalosow = rz.orzel + rz.reszka;
+            Assert.AreEqual(rz.wartosci.Length, LMonet, "Rzut nieudany");
+        }
 
         [TestMethod]
         public void PiecMonet()
