@@ -27,30 +27,22 @@ namespace RzutMoneta
                     try
                     {
                         LMonet = Int32.Parse(line);
-                        if (LMonet <= 0 || LMonet > 5) 
-                        {
-                            throw new ArgumentException();
-                        }
+                         if (LMonet <= 0 || LMonet > 5) 
+                          {
+                              Console.WriteLine("!! Wprowadzona liczba jest spoza zakresu 1-5 !!");
+                          }
 
                     }
                     catch (FormatException )
                     {
                         Console.WriteLine("!! Wprowadzonym znakiem nie jest liczba całkowita !!");
-                
-                     
+                                    
                     }
-                    catch (ArgumentException)
-                    {
-                        Console.WriteLine("!! Wprowadzona liczba jest spoza zakresu 1-5 !!");
-                        LMonet = 0;
-                     
-
-                    }
+              
                     catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
-                    
-                    }
+                                        }
                
 
 
