@@ -31,6 +31,10 @@ namespace RzutMoneta
             {
                 return values;
             }
+            set
+            {
+                values = value;
+            }
            
         }
     //  public  string ww;

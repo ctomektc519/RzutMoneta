@@ -7,6 +7,7 @@ namespace RzutTest
     [TestClass]
     public class TestyRM
     {
+        //Test metody   Rzut.Losowanie
         [TestMethod]
         public void TestLosowanie()
         {
@@ -16,24 +17,22 @@ namespace RzutTest
            int Liczbalosow = rz.orzel + rz.reszka;
             Assert.AreEqual(rz.wartosci.Length, LMonet, "Rzut nieudany");
         }
+        //Test metody Rzut.Wyniki
 
-       /* [TestMethod]
+        [TestMethod]
         public void TestWyniki()
         {
             
-           // int[] values = new int[] { 0, 1, 0 };
+           
             Rzut rz = new Rzut();
-            
-            //int[] values = new int[] { 0, 1, 0,1 };
-            
+            rz.wartosci = new int[] { 1,0,0,1};
+                      
             rz.Wyniki();
             int a = rz.orzel + rz.reszka;
             
-            /*rz.Losowanie(LMonet);
-            int Liczbalosow = rz.orzel + rz.reszka;
-            Assert.AreEqual(a,0 , "Rzut nieudany");
-        }*/
-
+            Assert.AreEqual(a,rz.wartosci.Length , "Rzut nieudany");
+        }
+        //Test klasy Rzut rzut - górna granica 5 monet
         [TestMethod]
         public void PiecMonet()
         {
@@ -46,6 +45,7 @@ namespace RzutTest
         }
 
        [TestMethod]
+        //Test klasy Rzut rzut dolna granica - 1 moneta
         public void JednaMoneta()
         {
             int LMonet = 1;
@@ -57,6 +57,7 @@ namespace RzutTest
         }
 
         [TestMethod]
+        //Test klasy rzut - przekroczenie założonej ilości monet
        public void SzescMonet()
         {
             int LMonet = 6;
@@ -66,6 +67,7 @@ namespace RzutTest
         }
 
         [TestMethod]
+        //Test klasy rzut - wprowadzenie zerowej ilości monet
         public void ZeroMonet()
         {
             int LMonet = 0;
