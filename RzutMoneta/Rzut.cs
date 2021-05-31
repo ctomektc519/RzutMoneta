@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
 
 namespace RzutMoneta
@@ -80,17 +82,23 @@ namespace RzutMoneta
            
           //  Console.WriteLine("\nWykonano {0} rzutów monetą.", values.Length);
             Console.Write("\nWylosowano:");
+           
             for (int j = 0; j < values.Length; j++)
             {
                 int w = values[j];
                 switch (w)
                 {
                     case 0:
-                        Console.Write("     "+"[RESZKA]");
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("     "+ "[RESZKA]");
+                        Console.ResetColor();
                         break;
                     case 1:
                         orly += 1;
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.Write("     "+"[ORZEŁ]");
+                        Console.ResetColor();
+
                         break;
                     default:
                         continue;
